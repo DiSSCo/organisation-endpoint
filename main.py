@@ -6,6 +6,7 @@ from flask_cors import CORS
 from typing import Union
 
 
+# Cordra endpoint
 cordra_endpoint = 'https://nsidr.org//objects/'
 
 
