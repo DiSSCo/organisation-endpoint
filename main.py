@@ -41,7 +41,7 @@ def request_organisation_data() -> dict:
                     'ROR_url': None
                 }
 
-    organisations_data['organisations_list'] = organisations_list
+    # organisations_data['organisations_list'] = organisations_list
 
     return organisations_data
 
