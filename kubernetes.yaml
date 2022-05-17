@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: organisation-endpoint
+spec:
+  selector:
+    matchLabels:
+      app: organisation-endpoint
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: organisation-endpoint
+    spec:
+      containers:
+      - name: organisation-endpoint
+        image: organisation-endpoint
+        ports:
+        - containerPort: 5000
